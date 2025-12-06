@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sasak Digital - Solusi Digital Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center relative"
+      >
+        <div class="text-2xl font-bold text-indigo-600">Sasak Digital</div>
+
+        <ul class="hidden md:flex flex-space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-indigo-600 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-indigo-600 transition"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="text-gray-700 hover:text-indigo-600 transition"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-indigo-600 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hidden md:block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition transform hover:-translate-y-0.5"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+
+        <button
+          onclick="toggleMobileMenu()"
+          class="md:hidden flex flex-col gap-1 p-2"
+        >
+          <span class="w-6 h-0.5 bg-indigo-600 transition-all"></span>
+          <span class="w-6 h-0.5 bg-indigo-600 transition-all"></span>
+          <span class="w-6 h-0.5 bg-indigo-600 transition-all"></span>
+        </button>
+
+        <div
+          id="mobileMenu"
+          class="hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg"
+        >
+          <a
+            href="#home"
+            onclick="toggleMobileMenu()"
+            class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-indigo-600 border-b"
+            >Home</a
+          >
+          <a
+            href="#features"
+            onclick="toggleMobileMenu()"
+            class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-indigo-600 border-b"
+            >Features</a
+          >
+          <a
+            href="#pricing"
+            onclick="toggleMobileMenu()"
+            class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-indigo-600 border-b"
+            >Pricing</a
+          >
+          <a
+            href="#about"
+            onclick="toggleMobileMenu()"
+            class="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-indigo-600 border-b"
+            >About</a
+          >
+          <a
+            href="#"
+            class="block text-center bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            onclick="toggleMobileMenu()"
+            >Get Started</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section
+      id="home"
+      class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-24 text-center"
+    >
+      <div class="container mx-auto px-4">
+        <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-4">
+          Solusi Digital Modern untuk Bisnis Anda
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Tingkatkan produktivitas dan efisiensi dengan platform all-in-one
+          kami.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a
+            href="#features"
+            class="bg-white text-indigo-600 py-4 px-8 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:-translate-y-0.5"
+            >Mulai Gratis</a
+          >
+          <a
+            href="#pricing"
+            class="bg-transparent border-2 border-white text-white py-4 px-8 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition"
+            >Pelajari Lebih Lanjut</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Mengapa Memilih Kami?
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Keunggulan yang membuat kami berbeda.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+              Cepat & Efisien
+            </h3>
+            <p class="text-center text-gray-600">
+              Proses otomatis yang menghemat waktu 80%.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c5.093 0 9.244 3.974 9.877 9.043l-.004-.002A9.998 9.998 0 0012 22.001C6.477 22.001 2 17.524 2 12.001"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+              Aman & Terpercaya
+            </h3>
+            <p class="text-center text-gray-600">
+              Keamanan tingkat enterprise untuk data Anda.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4m-12-4l-4-4 4-4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+              Mudah Digunakan
+            </h3>
+            <p class="text-center text-gray-600">
+              Interface intuitif yang ramah pengguna.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-2 transition"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 8v8m-4-8v8m-4-8v8m-6 4h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800 mb-2">
+              Analytics Lengkap
+            </h3>
+            <p class="text-center text-gray-600">
+              Dashboard komprehensif untuk monitoring real-time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Fitur Unggulan
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Semua yang Anda butuhkan dalam satu platform.
+        </p>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-12 mt-12">
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-4xl text-white mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9.25 10H5L7.5 7H10L9.5 12H14L16.5 9H20L17.5 14H14.5L15 19H9.75Z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Performa Tinggi
+            </h3>
+            <p class="text-gray-600">
+              Infrastruktur cloud yang powerful untuk kecepatan maksimal.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-4xl text-white mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Integrasi Mudah
+            </h3>
+            <p class="text-gray-600">
+              Koneksi seamless dengan tools favorit Anda.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-4xl text-white mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 18L18 12L12 6M6 12H18M18 12V6M18 12V18"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              Akses Multi-Device
+            </h3>
+            <p class="text-gray-600">Bekerja dari mana saja, kapan saja.</p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-4xl text-white mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 10l9-6 9 6M5 10v9a2 2 0 002 2h10a2 2 0 002-2v-9"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">Skalabilitas</h3>
+            <p class="text-gray-600">
+              Tumbuh tanpa batas dengan solusi yang fleksibel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div
+            class="bg-indigo-100 h-96 rounded-xl flex items-center justify-center text-6xl text-indigo-600"
+          >
+            <svg
+              class="w-24 h-24"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-bold mb-4 text-gray-800">Tentang Kami</h2>
+            <p class="text-gray-600 mb-4">
+              Kami adalah tim profesional yang berdedikasi untuk menghadirkan
+              solusi teknologi terbaik bagi bisnis modern.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Dengan pengalaman lebih dari 10 tahun di industri, kami telah
+              membantu ribuan perusahaan mencapai tujuan digital mereka.
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition transform hover:translate-y-0.5"
+              >Lebih Lanjut</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Paket Harga
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Pilih paket yang sesuai dengan kebutuhan Anda.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div
+            class="bg-white p-10 rounded-xl shadow-lg text-center hover:-translate-y-3 transition"
+          >
+            <h3 class="text-2xl font-bold mb-4">Starter</h3>
+            <p class="text-5xl font-bold mb-6 text-indigo-600">
+              Rp 99K
+              <span class="text-base font-normal text-gray-600">/bulan</span>
+            </p>
+            <ul class="text-left mb-8 space-y-3">
+              <li class="border-b pb-3 border-gray-100">✔️ 5 Projects</li>
+              <li class="border-b pb-3 border-gray-100">✔️ 10 GB Storage</li>
+              <li class="border-b pb-3 border-gray-100">✔️ Email Support</li>
+              <li class="pb-3">✔️ Basic Analytics</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition"
+              >Pilih Paket</a
+            >
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-indigo-500 to-purple-600 p-10 rounded-xl shadow-2xl text-center text-white scale-105 hover:-translate-y-3 transition"
+          >
+            <h3 class="text-2xl font-bold mb-4">Professional</h3>
+            <p class="text-5xl font-bold mb-6">
+              Rp 299K
+              <span class="text-base font-normal opacity-90">/bulan</span>
+            </p>
+            <ul class="text-left mb-8 space-y-3">
+              <li class="border-b pb-3 border-white border-opacity-20">
+                ✔️ Unlimited Projects
+              </li>
+              <li class="border-b pb-3 border-white border-opacity-20">
+                ✔️ 100 GB Storage
+              </li>
+              <li class="border-b pb-3 border-white border-opacity-20">
+                ✔️ Priority Support
+              </li>
+              <li class="pb-3">✔️ Advanced Analytics</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-white text-indigo-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+              >Pilih Paket</a
+            >
+          </div>
+
+          <div
+            class="bg-white p-10 rounded-xl shadow-lg text-center hover:-translate-y-3 transition"
+          >
+            <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+            <p class="text-5xl font-bold mb-6 text-gray-800">Custom</p>
+            <ul class="text-left mb-8 space-y-3">
+              <li class="border-b pb-3 border-gray-100">
+                ✔️ Unlimited Everything
+              </li>
+              <li class="border-b pb-3 border-gray-100">
+                ✔️ Unlimited Storage
+              </li>
+              <li class="border-b pb-3 border-gray-100">✔️ 24/7 Support</li>
+              <li class="pb-3">✔️ Custom Solutions</li>
+            </ul>
+            <a
+              href="#"
+              class="block bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Pertanyaan Umum (FAQ)
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-xl mx-auto">
+          Jawaban untuk pertanyaan sering diajukan.
+        </p>
+
+        <div class="max-w-3xl mx-auto space-y-4 mt-12">
+          <div class="bg-white rounded-lg overflow-hidden">
+            <div
+              class="p-6 cursor-pointer hover:bg-gray-50 flex justify-between items-center font-semibold"
+              onclick="toggleFAQ(1)"
+            >
+              <span>Bagaimana cara memulai?</span>
+              <span
+                ><svg
+                  class="w-5 h-5 transition transform"
+                  id="icon-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path></svg
+              ></span>
+            </div>
+            <div id="content-1" class="hidden px-6 pb-6 text-gray-600">
+              Cukup daftar dengan email Anda, dan Anda bisa langsung mulai
+              menggunakan platform kami secara gratis selama 14 hari.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg overflow-hidden">
+            <div
+              class="p-6 cursor-pointer hover:bg-gray-50 flex justify-between items-center font-semibold"
+              onclick="toggleFAQ(2)"
+            >
+              <span>Apakah ada biaya tersembunyi?</span>
+              <span
+                ><svg
+                  class="w-5 h-5 transition transform"
+                  id="icon-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path></svg
+              ></span>
+            </div>
+            <div id="content-2" class="hidden px-6 pb-6 text-gray-600">
+              Tidak ada biaya tersembunyi. Semua harga sudah transparan dan
+              tertera di halaman pricing.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg overflow-hidden">
+            <div
+              class="p-6 cursor-pointer hover:bg-gray-50 flex justify-between items-center font-semibold"
+              onclick="toggleFAQ(3)"
+            >
+              <span>Bisakah saya upgrade kapan saja?</span>
+              <span
+                ><svg
+                  class="w-5 h-5 transition transform"
+                  id="icon-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path></svg
+              ></span>
+            </div>
+            <div id="content-3" class="hidden px-6 pb-6 text-gray-600">
+              Ya, Anda bisa upgrade atau downgrade paket kapan saja sesuai
+              kebutuhan bisnis Anda.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Apa Kata Mereka?
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Testimoni dari klien yang puas.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="italic text-gray-700 mb-6">
+              "Platform ini benar-benar mengubah cara kami bekerja.
+              Produktivitas tim meningkat drastis!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center font-bold text-indigo-600"
+              >
+                AS
+              </div>
+              <div>
+                <div class="font-bold">Andi Saputra</div>
+                <div class="text-sm text-gray-700">CEO, TechCorp</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="italic text-gray-700 mb-6">
+              "Support team yang responsif dan fitur yang lengkap. Highly
+              recommended!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center font-bold text-indigo-600"
+              >
+                SR
+              </div>
+              <div>
+                <div class="font-bold">Siti Rahma</div>
+                <div class="text-sm text-gray-700">Manager, StartupHub</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="italic text-gray-700 mb-6">
+              "ROI yang kami dapatkan jauh melebihi ekspektasi. Worth every
+              penny!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center font-bold text-indigo-600"
+              >
+                BW
+              </div>
+              <div>
+                <div class="font-bold">Budi Wijaya</div>
+                <div class="text-sm text-gray-700">Founder, DigitalAgency</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-20 bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-center"
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">
+          Siap Memulai Perjalanan Digital Anda?
+        </h2>
+        <p class="text-xl opacity-90 mb-8">
+          Bergabunglah dengan ribuan perusahaan yang telah mempercayai kami.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:-translate-y-0.5"
+          >Coba Gratis Sekarang</a
+        >
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h4 class="text-xl font-bold mb-4">ProductName</h4>
+            <p class="text-gray-400">
+              Solusi digital terbaik untuk bisnis modern Anda.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Produk</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#features"
+                  class="text-gray-400 hover:text-white transition"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="text-gray-400 hover:text-white transition"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Perusahaan</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Support</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Status</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="py-12 bg-white text-center">
+          <div class="container mx-auto px-4">
+            <h3 class="text-xl font-bold mb-8 text-gray-800">Ikuti Kami</h3>
+            <div class="flex justify-center gap-8">
+              <a
+                href="#"
+                class="w-12 h-12 bg-indigo-600 text-white hover:bg-indigo-700 transition transform hover:scale-110 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22.28 0H1.72C.77 0 0 .77 0 1.72v20.56C0 23.23.77 24 1.72 24h20.56c.95 0 1.72-.77 1.72-1.72V1.72C24 .77 23.23 0 22.28 0zM7 20h-3V9h3v11zm-1.5-12.75A2.75 2.75 0 118.25 4.5a2.75 2.75 0 01-5.5 0A2.75 2.75 0 015.5 7.25zM20 20h-3v-5c0-1.25-.5-2-1.5-2-.75 0-1.5.5-1.5 1.5V20h-3V9h3v1.5c.5-1 1.75-2.5 3-2.5 2.25 0 4 1.5 4 4v7z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 bg-indigo-600 text-white hover:bg-indigo-700 transition transform hover:scale-110 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 5.8a8.88 8.88 0 01-2.58.73 4.45 4.45 0 001.95-2.5A8.8 8.8 0 0118.5 6.4a4.4 4.4 0 00-7.5 4.02A12.42 12.42 0 013 4.4v.55a4.4 4.4 0 001.95 3.65 4.3 4.3 0 01-2-.55v.05a4.4 4.4 0 003.55 4.3 4.5 4.5 0 01-2 .07 4.4 4.4 0 004.1 3.05 8.85 8.85 0 01-5.45 1.88c-.35 0-.7 0-1.05-.06a12.5 12.5 0 006.75 2A12.5 12.5 0 0022 10.3c0-.18 0-.36-.01-.54a8.9 8.9 0 002.16-2.2z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 bg-indigo-600 text-white hover:bg-indigo-700 transition transform hover:scale-110 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2.163c3.2 0 3.58.01 4.85.07 1.27.06 1.84.22 2.36.42.52.2.98.48 1.42.92.44.44.72.9.92 1.42.2.52.36 1.09.42 2.36.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.06 1.27-.22 1.84-.42 2.36-.2.52-.48.98-.92 1.42-.44.44-.9.72-1.42.92-.52.2-1.09.36-2.36.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.27-.06-1.84-.22-2.36-.42-.52-.2-.98-.48-1.42-.92-.44-.44-.72-.9-.92-1.42-.2-.52-.36-1.09-.42-2.36-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.06-1.27.22-1.84.42-2.36.2-.52.48-.98.92-1.42.44-.44.9-.72 1.42-.92.52-.2 1.09-.36 2.36-.42 1.27-.06 1.65-.07 4.85-.07zM12 4.15c-3.1 0-3.5.01-4.72.07-1.15.06-1.66.21-2.06.39-.4.18-.75.42-1.03.7-.28.28-.52.63-.7.1.05-.4.21-.86-.39-1.03-.18-.4-.32-.91-.39-2.06-.06-1.22-.07-1.62-.07-4.72s.01-3.5.07-4.72c.06-1.15.21-1.66.39-2.06.18-.4.42-.75.7-1.03.28-.28.63-.52 1.03-.7.4-.18.91-.32 2.06-.39 1.22-.06 1.62-.07 4.72-.07s3.5.01 4.72.07c1.15.06 1.66.21 2.06.39.4.18.75.42 1.03.7.28.28.52.63.7 1.03.18.4.32.91.39 2.06.06 1.22.07 1.62.07 4.72s-.01 3.5-.07 4.72c-.06 1.15-.21 1.66-.39 2.06-.18.4-.42.75-.7 1.03-.28.28-.63.52-1.03.7-.4.18-.91.32-2.06.39-1.22.06-1.62.07-4.72.07zM12 6.5A5.5 5.5 0 1112 17.5 5.5 5.5 0 0112 6.5zm0 1A4.5 4.5 0 1012 16.5 4.5 4.5 0 0012 7.5zM17.25 5.5A1.25 1.25 0 1117.25 3A1.25 1.25 0 0117.25 5.5z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div
+          class="border-t border-gray-700 text-center text-gray-400 pt-8 mt-8"
+        >
+          <p>&copy; 2025 Sasak Digital. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+
+      function toggleFAQ(id) {
+        const content = document.getElementById("content-" + id);
+        const icon = document.getElementById("icon-" + id);
+
+        // Tutup semua FAQ kecuali yang diklik (opsional, tapi disarankan untuk UX)
+        // for (let i = 1; i <= 3; i++) {
+        //     const c = document.getElementById('content-' + i);
+        //     const ic = document.getElementById('icon-' + i);
+        //     if (i !== id && !c.classList.contains('hidden')) {
+        //         c.classList.add('hidden');
+        //         ic.classList.remove('rotate-180');
+        //     }
+        // }
+
+        // Buka/tutup FAQ yang diklik
+        content.classList.toggle("hidden");
+        icon.classList.toggle("rotate-180");
+      }
+    </script>
+  </body>
+</html>
